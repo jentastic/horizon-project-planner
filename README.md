@@ -1,6 +1,6 @@
 # Horizon
 
-A single-user planning app for work that unfolds over months rather than days — grant applications, manuscripts, thesis chapters, any project with a distant deadline and a lot of small steps in between.
+This is a single-user planning app for work that unfolds over months rather than days — grant applications, manuscripts, thesis chapters, any project with a distant deadline and a lot of small steps in between.
 
 It runs entirely on free tiers. Your data lives as JSON files in a private GitHub repository you own, so every edit becomes a commit and nothing is locked inside someone else's database.
 
@@ -11,7 +11,7 @@ It runs entirely on free tiers. Your data lives as JSON files in a private GitHu
 
 ## What it does
 
-**Projects, not just tasks.** Each project has a hard deadline, a domain (a category you define), notes, and an ordered checklist of steps with their own target dates. The home screen shows them as cards with progress and the next thing to do.
+**Projects split into multiple tasks** Each project has a hard deadline, a domain (a category you define), notes, and an ordered checklist of steps with their own target dates. The home screen shows them as cards with progress and the next thing to do.
 
 **A weekly view that answers "what now?"** Below the cards sits a list of everything due between today and Friday, with a peek at next week. Overdue items surface there in a muted red rather than shouting.
 
@@ -125,7 +125,6 @@ To change the whole look, edit the `:root` block in `app/globals.css` and the ma
 ## Limitations worth knowing
 
 - **Single user.** One password, no accounts, no sharing. Two people editing at once will overwrite each other.
-- **Saves are commits**, so they take a second or so and are debounced. That is a fair trade for free version history, but it is not instant.
 - **3 MB attachment ceiling**, imposed by serverless request limits. Larger files go in the links list.
 - **No notifications.** The calendar feed is how deadlines reach you, and subscribed calendars refresh on their own schedule — often only every few hours.
 - **No recurring-task engine.** Recurring meetings spawn ordinary one-off projects on demand, by design.
